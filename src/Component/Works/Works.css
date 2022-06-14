@@ -1,0 +1,153 @@
+.works
+{
+    padding: 0 3rem;
+    display: flex;
+    height: 90vh;
+
+}
+.w-right
+{
+    position: relative;
+}
+.w-maincircle
+{
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    left: 9rem;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+.w-maincircle>*
+{
+    position: absolute;
+}
+.w-maincircle>:nth-child(1)
+{
+    top: -3rem;
+    left: 6rem;
+}
+.w-maincircle>:nth-child(2)
+{
+    left: -3rem;
+    top: 5rem;
+}
+.w-maincircle>:nth-child(3)
+{
+    top: 5rem;
+    left: 6rem;
+}
+.w-maincircle>:nth-child(4)
+{
+    top: 5rem;
+    left: 15rem;
+}
+.w-maincircle>:nth-child(5)
+{
+    left: 6rem;
+    top: 13rem;
+}
+.w-secondcircle
+{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--smboxShadow);
+    background: white;
+}
+.w-secondcircle>img{
+    transform: scale(0.6);
+}
+.w-backcircle
+{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.bluecircle
+{
+    background: #1949b8;
+    left: 18rem;
+    top: 0rem;
+}
+.yellowcircle
+{
+    background: #f5c32c;
+    left: 18rem;
+    top: 8rem;
+}
+@media screen and (max-width:480px)
+{
+    .works
+    {
+        display: flex;
+        flex-direction: column;
+       height: 40rem;
+       gap:5rem;
+       padding: 0;
+       margin-top: -27rem;
+    }
+    .w-right
+    {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+        
+    }
+    .w-maincircle
+    {
+        position: static;
+    }
+    .w-backcircle
+    {
+        left: 8rem;
+    }
+    .awesome>:nth-child(1)
+    {
+        font-size: 1.5rem;
+    }
+.awesome>:nth-child(2)
+{
+    font-size: 2.5rem;
+
+}
+.awesome>:nth-child(3)
+{
+    font-size: 13px;
+}
+
+}
+@media screen and (max-width:676px)
+{
+    .works
+    {
+        display: flex;
+        flex-direction: column;
+       height: 40rem;
+       gap:5rem;
+       padding: 0;
+       margin-top: -10rem;
+    }
+}
+@media screen and (max-width:991px)
+{
+    .works
+    {
+        display: flex;
+        flex-direction: column;
+       height: 40rem;
+       gap:5rem;
+       padding: 0;
+       margin-top: -10rem;
+    }
+}
